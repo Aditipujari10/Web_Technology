@@ -1,0 +1,35 @@
+web technology :
+
+rodemap ---
+
+frontend               backend
+   |			  |
+HTML,CSS	      	.net
+   |		     	express
+javascript
+   |
+ DOM---------API--------mango
+   |
+react/angular
+
+
+--node.js : it is used to run javascript code outside the browser
+--to run the code of javascrpit ---> node filename.js
+
+datatypes : ---
+	1.primitive                 2.non-primitives
+	number			     --object
+	undefined
+	Boolean
+	string
+	null
+	symbol
+	begin
+
+
+variables :--
+const : not change the value
+let   : new version method   --|(block of scope thoery) 
+var   : old method (blo	     --|
+
+
