@@ -1,0 +1,15 @@
+day2
+ 
+conversion operator : ---
+
+ex ----->
+let num = 33;
+let string = String(num);
+console.log(string);
+console.log(typeof(string));
+console.log(typeof(num));
+
+
+let jj = "33";
+let str = Number(jj);
+console.log(typeof(str));

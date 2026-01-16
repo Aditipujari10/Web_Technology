@@ -13,18 +13,6 @@ let num2 = Number(num1);
 console.log(num2);
 console.log(typeof(num2)); 
 
-
-
-//3 
-let num3 = "true";
-let num4 = 
-
-
-// let jj = "33";
-// let str = Number(jj);
-// console.log(typeof(str));
-
-
 //activity
 //conversion
 

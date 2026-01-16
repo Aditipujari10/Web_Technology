@@ -12,7 +12,7 @@ console.log(a,b);
 var a =10;
 let ab =20;
 {
-    var a =10;
+    var a =100;
     let ab = 200;
     console.log("a : ",a ,"ab : ",ab);
 }
@@ -26,7 +26,7 @@ console.log(x)
 
 // == , ===    (checking )
 let m = 20;
-var n = 20;
+let n = "20";
 if(m == n){
     console.log("condition check");
 }
