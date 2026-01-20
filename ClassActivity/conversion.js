@@ -51,3 +51,40 @@ let scoreCounter = 200;
 ++scoreCounter;
 console.log(scoreCounter);
 
+
+//1.string to Number
+let n = "10";
+let s = Number(n);
+console.log(typeof(n));
+console.log(typeof(s));
+
+
+//2.Number to String
+let n1 = 200;
+let s1 = String(n1);
+console.log(typeof(n1));
+console.log(typeof(s1));
+
+//3.boolean
+let n2 = 0;
+let b1 = Boolean(n2);
+console.log(b1);
+console.log(typeof(b1));
+
+//4.boolean to number
+let bool = true;
+let numb = Number(bool);
+console.log(numb);
+console.log(typeof(bool));
+
+//5.string to boolean
+let st = "Aditi";
+let bo = Boolean(st);
+console.log(bo);
+console.log(typeof(bo));
+
+//6.boolean to string
+let boole = false;
+let stri = String(boole);
+console.log(stri);
+console.log(typeof(stri));
