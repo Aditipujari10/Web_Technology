@@ -30,3 +30,26 @@ const hello = function(){
     console.log("Hello")
 }
 hello();
+
+
+// 1) Function Declaration (Creating Function Name)
+
+// 📌 Meaning:
+// When we write function keyword with function name → it is called function declaration.
+function greet() {
+}
+
+
+// 2) Function Definition (Writing Code inside function)
+
+// 📌 Meaning:
+// The code written inside { } is the function definition (logic/work of function).
+function greet() {
+  console.log("Hello Aditi!");
+}
+
+// 3) Function Calling (Using the function)
+
+// 📌 Meaning:
+// To run the function code, we call it using ().
+greet();
