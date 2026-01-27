@@ -23,3 +23,7 @@ console.log(myArr.includes(5));//check the element
 console.log(myArr.indexOf(5));//return the index of element
 
 //slice and splite
+console.log(myArr.slice(2,4));
+
+let text = "Hello World";
+console.log(text.split());

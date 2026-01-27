@@ -53,3 +53,29 @@ function greet() {
 // 📌 Meaning:
 // To run the function code, we call it using ().
 greet();
+
+
+
+//memory
+//two types of memory stack and heap
+//stack used for primitive datatypes  ///copy of value
+//heap used for non-primitive datatypes ///copy reference
+let myNewYoutubeChannel = "AUP";
+let newYoutubeChannel = myNewYoutubeChannel;
+newYoutubeChannel = "hgtrftrc";
+console.log(myNewYoutubeChannel);
+console.log(newYoutubeChannel);
+
+//primitive datatypes are used for stack memory when we assign one variable to another copy is made so changing one is not effect another.
+
+let user1 = {
+    fName : "Aditi",
+    age : 20,
+    ID : 3
+};
+
+let user2 = user1;
+user2.ID = 45;
+console.log(user1);
+console.log(user2);
+//non primitive datatypes object are stored in heap mememory when we assign one object to another variable reference ois copy not the value if we change one both will see the changes.
