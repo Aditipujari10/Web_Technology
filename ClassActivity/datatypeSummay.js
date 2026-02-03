@@ -78,4 +78,4 @@ let user2 = user1;
 user2.ID = 45;
 console.log(user1);
 console.log(user2);
-//non primitive datatypes object are stored in heap mememory when we assign one object to another variable reference ois copy not the value if we change one both will see the changes.
+//non primitive datatypes object are stored in heap mememory when we assign one object to another variable reference is copy not the value if we change one both will see the changes.

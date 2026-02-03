@@ -1,5 +1,5 @@
 //imp for viva
-let balance = new Number(10000000000000);
+let balance = new Number(10000000000000.00000);
 console.log(balance);
 console.log(typeof(balance));
 console.log(balance.toString());

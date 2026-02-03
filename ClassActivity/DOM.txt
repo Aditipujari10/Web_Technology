@@ -1,0 +1,7 @@
+DOM - document object model
+Dom is the bridge between javascript and HTML
+Dom is the programming interface  for HTML
+when browser load an HTML page it converts HTML to an OBJECT that object structure that called Dom
+javascript uses DOM chnage,read,add,delete HTML Element.
+
+
