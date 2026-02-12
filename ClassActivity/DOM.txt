@@ -4,4 +4,7 @@ Dom is the programming interface  for HTML
 when browser load an HTML page it converts HTML to an OBJECT that object structure that called Dom
 javascript uses DOM chnage,read,add,delete HTML Element.
 
+DOM manupiulation ---------->
+Dom manupulation means changing HTML by using javascript
+example : show error msg,clear input field , display successfull,change text color to red
 
