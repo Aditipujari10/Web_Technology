@@ -93,3 +93,79 @@ const math = (a,b) => {
 
 }
 math(7,8);
+
+
+//5.write a code for switch case in js
+let day = 3;
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  default:
+    console.log("Invalid Day");
+}
+
+
+//6.how to use truthy and falsy value in js withn ex
+//false, 0, "", null, undefined, NaN -----> falsy value
+let name = "";
+
+if (name) {
+  console.log("Valid Name");
+} else {
+  console.log("Empty Name");
+}
+
+
+//7.write a code for how to use loops in array withn ex
+let arr = [10, 20, 30];
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+
+//8.what is difference bet for-of and for-in
+//for-of
+let arr1 = [10, 20, 30];
+for (let val of arr1) {
+  console.log(val);
+}
+
+//for-in
+for (let i in arr) {
+  console.log(i);
+}
+
+// | for-of          | for-in           |
+// | --------------- | ---------------- |
+// | Gives values    | Gives index      |
+// | Used for arrays | Used for objects |
+
+
+//9.how to use map and filter in js with 3.examples
+//map()
+let nums = [1, 2, 3];
+let square = nums.map(n => n * n);
+console.log(square); 
+
+//filter()
+let nums1 = [1, 2, 3];
+let square1 = nums1.map(n => n * n);
+console.log(square1); 
+
+let nums2 = [2, 4, 6, 8];
+let result = nums2
+  .filter(n => n > 4)
+  .map(n => n * 2);
+console.log(result); // [12,16]
+
+//10.ternary operator
+let age = 18;
+let msg = (age >= 18) ? "Adult" : "Minor";
+console.log(msg); 

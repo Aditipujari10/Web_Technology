@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events Demo</title>
+
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: lightblue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Amazing Images (Click to Remove)</h2>
+
+    <ul id="images">
+        <li>
+            <img id="photoshop"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                alt="Photoshop Logo">
+        </li>
+
+        <li>
+            <img id="japan"
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+                alt="Mount Fuji">
+        </li>
+
+        <li>
+            <img id="Nature"
+                src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b"
+                alt="Nature Image">
+        </li>
+
+        <li>
+            <img id="photoman"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                alt="Photographer">
+        </li>
+
+        <li>
+            <img id="tiger"
+                src="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+                alt="Tiger" onclick="alert('Hiii')">
+        </li>
+        
+
+        <li>
+            <a href="https://google.com" id="google">Visit Google</a>
+        </li>
+    </ul>
+  </body>
+  <script>document.getElementById('photoman').onclick=function(){
+                alert('Hiiiiiiii');
+            }
+        document.getElementById('Nature').addEventListener('click',function(e){
+            console.log(e);
+        })
+        //eventPropagation
+        document.getElementById('images').addEventListener('click',function(){
+            console.log("Clicking inside the event");
+        })
+         document.getElementById('photoshop').addEventListener('click',function(){
+            console.log("Clicking on photoshop");
+        })
+        document.getElementById('google').addEventListener('click',function(e){
+            console.log("Google clicked");
+            e.preventDefault();
+        })
+    </script>
+  //select element assign function to click event when clicked function run 
+  //problem ---- > only one event can be assigned can not handle multiple listeners properly
+  </html>
+
+  //event is an action that happens in the browser .clicking a button ,moving mouse ,pressing key ,submitting form,loading page
+  //javascript can detect this events and responds to them 
+  //so types of event ---->mouse event,keyborad event,browser event
+  //mouse event ----> click,DBclick,mouseHover,mouseOut,
+  //keyBorad event --->keyDown,keyUp,
+  //browser event ---> load ,resize,scroll
+   
+  <!-- <li>
+            <img id="tiger"
+                src="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+                alt="Tiger" onclick="alert('Hiii')">
+        </li> -->
+//HTML should contain structure javascript should containt logic so mixing both is bad practice hard to maintain in big project
+//activity ---->jquey,typetimespam default previnted,targeret,source element,current target,client X,client Y,screen x,screen Y,alt key,ctrl key,sift key,
+
+
+//addEventListener ----> is a javascript method used to attached to event handle to an html element so that specific function run when particular event occur
+//eventPropegation
+
+//event goes inner element document \
+
+///activity ------>remove image after click and after refresh images come as it is
