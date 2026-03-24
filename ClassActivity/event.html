@@ -97,6 +97,14 @@
             console.log("Google clicked");
             e.preventDefault();
         })
+
+        //activity
+        document.getElementById("images").addEventListener("click", function (e) {
+        if (e.target.tagName === "IMG") {
+            e.target.parentNode.remove();
+        }
+
+    });
     </script>
   //select element assign function to click event when clicked function run 
   //problem ---- > only one event can be assigned can not handle multiple listeners properly

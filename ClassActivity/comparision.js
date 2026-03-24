@@ -18,8 +18,8 @@ console.log(undefined > 0);
 console.log(undefined == 0);
 console.log(undefined <= 0);
 
-// null in comparisons → becomes 0
-// undefined in comparisons → becomes NaN
+// null in comparisons  becomes 0
+// undefined in comparisons  becomes NaN
 
 // In comparisons (> < <= >=), null becomes 0, so null > 0 is false but null <= 0 is true.
 // In == equality, null is only equal to undefined, not to 0, so null == 0 is false.
@@ -34,9 +34,11 @@ console.log("2" == 2);
 //diff null and undefined
 let a ;
 console.log(a);
+console.log(typeof(a));
 // undefined = Here variable a is created but no value is assigned, so it becomes undefined.
 
 
 let b = null;
 console.log(b)
+console.log(typeof(b));
 // null = we manually set empty value

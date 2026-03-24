@@ -40,6 +40,6 @@ console.log(Array.of(score1,score2,score3));//create new array from given value 
 //Array.of(element1, element2, element3, ...)
 
 
-// 2. Array.from() → Convert to array
+// 2. Array.from() Convert to array
 // Array.from() creates an array from array-like or iterable objects.
 //Array.from(object, mapFunction)

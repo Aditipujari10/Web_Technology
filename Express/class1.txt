@@ -1,0 +1,28 @@
+Express - Express is a minimal application for node.js that simplifies the development of web server and APIs
+it provides features such as routing, middleware support ,request and response handling , template rendering,rest API creation.
+node js - used for small application
+express js - used for complex application
+
+
+steps for express ------>
+1.npm init
+2.npm install Express
+3.create entry file index.js
+
+Acitivity 
+1. Diff between package.json and package.lock.json
+2. diff between dependancies and dev dependancies
+3. add the logic using routes
+4. types of routes (GET,POST,PUT,DELETE,FETCH)
+
+routing in express js ------->
+routing referece to determine how aaplication respond client request for specific URL and HTTP mail.
+
+
+components of routing ----->
+1.URL path
+2.HTTP methos
+3.handlers method 
+
+
+rour
