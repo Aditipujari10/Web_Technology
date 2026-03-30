@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FinTrack Dashboard</title>
+  <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="logo">
+    <div class="logo-icon">📊</div>
+    <span class="logo-text">FinTrack</span>
+  </div>
+  <button class="nav-link active" id="nav-dashboard" onclick="showPage('dashboard')">
+    <span class="icon">⊞</span> Dashboard
+  </button>
+  <button class="nav-link" id="nav-add" onclick="showPage('add')">
+    <span class="icon">＋</span> Add New
+  </button>
+  <button class="nav-link" id="nav-reports" onclick="showPage('reports')">
+    <span class="icon">◑</span> Reports
+  </button>
+</aside>
+
+<main class="main">
+
+  <!-- Dashboard -->
+  <div class="page active" id="page-dashboard">
+    <h1>My Finances</h1>
+    <p class="subtitle">Welcome back! Here's your summary.</p>
+
+    <div class="cards-row">
+      <div class="card accent">
+        <div class="card-label">Total Balance <span class="card-icon">📋</span></div>
+        <div class="card-value" id="bal">₹0</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Total Income <span class="card-icon" style="color:var(--green)">↗</span></div>
+        <div class="card-value" id="inc">₹0</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Total Expenses <span class="card-icon" style="color:var(--red)">↘</span></div>
+        <div class="card-value" id="exp">₹0</div>
+      </div>
+    </div>
+
+    <div class="section-title">Recent Transactions</div>
+    <div class="tx-list" id="tx-list">
+      <div class="tx-empty" id="tx-empty">No transactions yet. Start by adding one!</div>
+    </div>
+  </div>
+
+  <!-- Add New -->
+  <div class="page" id="page-add">
+    <h1>Add Transaction</h1>
+    <p class="subtitle">Keep track of your money flow.</p>
+
+    <div class="form-card">
+      <div class="toggle-row">
+        <button class="toggle-btn active expense" id="btn-expense" onclick="setType('expense')">Expense</button>
+        <button class="toggle-btn income" id="btn-income" onclick="setType('income')">Income</button>
+      </div>
+
+      <div class="field">
+        <label>Description</label>
+        <input type="text" id="desc" placeholder="e.g. Grocery shopping" />
+      </div>
+
+      <div class="fields-row">
+        <div class="field">
+          <label>Amount</label>
+          <input type="number" id="amount" placeholder="0.00" min="0" step="0.01" />
+        </div>
+        <div class="field">
+          <label>Date</label>
+          <input type="date" id="date" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Category</label>
+        <select id="category">
+          <option>Food</option>
+          <option>Transport</option>
+          <option>Shopping</option>
+          <option>Bills</option>
+          <option>Entertainment</option>
+          <option>Health</option>
+          <option>Education</option>
+          <option>Salary</option>
+          <option>Freelance</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <button class="btn-save" onclick="saveTransaction()">Save Transaction</button>
+    </div>
+  </div>
+
+  <!-- Reports -->
+  <div class="page" id="page-reports">
+    <h1>Expense Reports</h1>
+    <p class="subtitle">Where is your money going?</p>
+
+    <div class="report-grid">
+      <div class="stat-card">
+        <div class="stat-label">Spending by Category</div>
+        <div id="cat-list"><p style="color:var(--gray-400);font-size:14px;margin-top:8px;">No expense data to display.</p></div>
+      </div>
+      <div class="stat-card purple">
+        <div class="stat-label">Highest Spending</div>
+        <div class="stat-value" id="highest">N/A</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<div class="toast" id="toast">Transaction saved!</div>
+
+<script src="project3.js"></script>
+</body>
+</html>
+
+<!-- 
+//manual testing of project -->

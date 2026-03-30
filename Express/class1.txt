@@ -3,9 +3,8 @@ it provides features such as routing, middleware support ,request and response h
 node js - used for small application
 express js - used for complex application
 
-
 steps for express ------>
-1.npm init
+1.npm init/ npm -y(Another way)
 2.npm install Express
 3.create entry file index.js
 
@@ -18,11 +17,48 @@ Acitivity
 routing in express js ------->
 routing referece to determine how aaplication respond client request for specific URL and HTTP mail.
 
-
 components of routing ----->
 1.URL path
 2.HTTP methos
 3.handlers method 
 
 
-rour
+1. Diff between package.json and package.lock.json
+package.json ---> what you want , contains requirement configration file , detailed information
+package.lock.json -----> what you got , containts intstallation,exact version ,it is detailed configration file
+
+2. diff between dependancies and dev dependancies
+dependancies ---> require to run app
+devDependancies ---> require to devlop the app
+
+4. types of routes (GET,POST,PUT,DELETE,FETCH)
+GET --> access the data
+POST --> Create and Add the data
+PUT --> Update the data
+DELETE --> Delete the data
+PATCH ---> Update only specific fields of data
+
+
+MIDDLE WARE ------>
+middle ware is a function that execute query request before sending final respons.they have access to 
+request , response and next
+
+client ----> middleware ------> server
+
+steps ---->
+
+    import 
+      |
+    middleware
+      |
+    routes
+      |
+    app.listen code
+
+
+function checkRoute(req , res , next){
+    console.log(req.url);
+}
+app.use(checkRoute);
+
+
